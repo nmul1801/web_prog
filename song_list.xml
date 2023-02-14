@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="song_list_style.css"?>
+
+<songs>
+    <song>
+        <artists>
+            <artist>Ozzy Osbourne</artist>
+        </artists>
+        <title>Crazy Train</title>
+        <genres>
+            <genre>Metal</genre>
+            <genre>Heavy Metal</genre>
+        </genres>
+        <year>1980</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Drake</artist>
+            <artist>Kanye West</artist>
+            <artist>Lil Wayne</artist>
+            <artist>Eminem</artist>
+        </artists>
+        <title>Forever</title>
+        <genres>
+            <genre>Hip Hop</genre>
+            <genre>Rap</genre>
+        </genres>
+        <year>2009</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Lil Wayne</artist>
+            <artist>Kendrick Lamar</artist>
+        </artists>
+        <title>Mona Lisa</title>
+        <genres>
+            <genre>Hip Hop</genre>
+            <genre>Rap</genre>
+        </genres>
+        <year>2018</year>
+    </song>
+    <song>
+        <artists>
+            <artist>The Police</artist>
+        </artists>
+        <title>Message in a Bottle</title>
+        <genres>
+            <genre>Reggae Rock</genre>
+            <genre>New Wave</genre>
+            <genre>Children's Music</genre>
+        </genres>
+        <year>1979</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Chris Brown</artist>
+            <artist>Lil Wayne</artist>
+            <artist>Busta Rhymes</artist>
+        </artists>
+        <title>Look As Me Now</title>
+        <genres>
+            <genre>Hip hop</genre>
+            <genre>R and B</genre>
+            <genre>Dance Pop</genre>
+        </genres>
+        <year>2011</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Led Zeppelin</artist>
+        </artists>
+        <title>Stairway to Heaven</title>
+        <genres>
+            <genre>Rock</genre>
+            <genre>Folk</genre>
+        </genres>
+        <year>1971</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Fleetwood Mac</artist>
+        </artists>
+        <title>Rhiannon</title>
+        <genres>
+            <genre>Rock</genre>
+        </genres>
+        <year>1975</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Fleetwood Mac</artist>
+        </artists>
+        <title>Go Your Own Way</title>
+        <genres>
+            <genre>Rock</genre>
+            <genre>Folk</genre>
+            <genre>Indie</genre>
+        </genres>
+        <year>1976</year>
+    </song>
+    <song>
+        <artists>
+            <artist>JPEGMAFIA</artist>
+        </artists>
+        <title>1539 N. Calvert</title>
+        <genres>
+            <genre>Alternative</genre>
+            <genre>Rap</genre>
+        </genres>
+        <year>2018</year>
+    </song>
+    <song>
+        <artists>
+            <artist>One Direction</artist>
+        </artists>
+        <title>Night Changes</title>
+        <genres>
+            <genre>Pop</genre>
+        </genres>
+        <year>2014</year>
+    </song>
+    <song>
+        <artists>
+            <artist>DRAM</artist>
+            <artist>Lil Yachty</artist>
+        </artists>
+        <title>Broccoli</title>
+        <genres>
+            <genre>Hip Hop</genre>
+            <genre>Rap</genre>
+        </genres>
+        <year>2016</year>
+    </song>
+    <song>
+        <artists>
+            <artist>Kai-O</artist>
+        </artists>
+        <title>Date, Pt. 2</title>
+        <genres>
+            <genre>Hip Hop</genre>
+            <genre>Rap</genre>
+        </genres>
+        <year>2020</year>
+    </song>
+</songs>
