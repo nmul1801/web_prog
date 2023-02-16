@@ -1,0 +1,32 @@
+#gameboard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin: 50px;
+}
+
+.horizcent {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.vertcent {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.space {
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#headmessage {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.winningspace{
+    color: green;
+    background-color: aqua;
+}
