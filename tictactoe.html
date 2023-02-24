@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Tic Tac Toe!</h1>
     <div id="headmessage"></div>
     <div id="gameboard">
-        <div id="1" class="space">_</div>
-        <div id="2" class="space vertcent">_</div>
-        <div id="3" class="space">_</div>
-        <div id="4" class="space horizcent">_</div>
-        <div id="5" class="space vertcent horizcent">_</div>
-        <div id="6" class="space horizcent">_</div>
-        <div id="7" class="space">_</div>
-        <div id="8" class="space vertcent">_</div>
-        <div id="9" class="space">_</div>
+        <div id="1" class="space"><strong>&nbsp;</strong></div>
+        <div id="2" class="space vertcent">&nbsp;</div>
+        <div id="3" class="space">&nbsp;</div>
+        <div id="4" class="space horizcent">&nbsp;</div>
+        <div id="5" class="space vertcent horizcent">&nbsp;</div>
+        <div id="6" class="space horizcent">&nbsp;</div>
+        <div id="7" class="space">&nbsp;</div>
+        <div id="8" class="space vertcent">&nbsp;</div>
+        <div id="9" class="space">&nbsp;</div>
+    </div>
+    <div id="btn-container">
+        <button id="reset_btn" onclick = "reset_board()">Reset Game</button> 
     </div>
 </body>
 <script src="script.js"></script>

@@ -1,8 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #gameboard {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 20vw 20vw 20vw;
     grid-template-rows: auto auto auto;
-    margin: 50px;
+    margin: 20px auto;
+    padding: 30px;
+    width: max-content;
+    border: 1px solid black
 }
 
 .horizcent {
@@ -16,6 +23,7 @@
 }
 
 .space {
+    font-weight: bold;
     padding: 50px 10px;
     text-align: center;
     font-size: 40px;
@@ -23,10 +31,37 @@
 
 #headmessage {
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
+    background-color: rgb(205, 205, 205);
+    border-radius: 10px;
+    width: max-content;
+    padding: 20px;
+    margin: auto;
 }
 
 .winningspace{
-    color: green;
     background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+#reset_btn {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    font-size: xx-large;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#reset_btn:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
