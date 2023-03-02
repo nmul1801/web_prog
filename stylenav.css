@@ -1,0 +1,25 @@
+nav a{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease-in;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
