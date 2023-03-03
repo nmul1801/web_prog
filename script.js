@@ -95,11 +95,12 @@ $(document).ready(function() {
     // arrays for computing costs
     selectors = []
     costs_arr = []
-    cost_each_arr = [5.5, 7.25, 6.8, 9.5, 3.25]
+    cost_each_arr = []
 
     // get selectors and inputs for cost
     for (i = 0; i < menuItems.length; i++) {
         selectors.push($("form[name='form-name'] select[name='quan" + i + "']"))
+        cost_each_arr.push(menuItems[i].cost)
     }
 
     $("input[name=cost]").each(function() {
