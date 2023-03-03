@@ -6,7 +6,21 @@ function compute_total(arr) {
     return sum
 }
 
-function create_message(delivery, old_date) {
+function create_message(delivery, old_date, selectors, subtot, tax, total, costs_arr) {
+    s = "<h1 style='text-align: center; margin-top: 40px;'> Thank you for ordering </h1> <br />"
+    s += "<h2 style='text-align: center;'>Order Summary</h2>"
+
+    for (let i = 0; i < selectors.length; i++) {
+        if (selectors[i].val() != 0) {
+            s += "<p style='text-align: center;'>" + selectors[i].val() + " " + menuItems[i].name + ": $" + costs_arr[i].val() +  "</p>"
+        }
+    }
+
+    s += "<br /> <h2 style='text-align: center;'>Order Price</h2>"
+    s += "<p style='text-align: center;'> Subtotal: $" + subtot + "</p>"
+    s += "<p style='text-align: center;'> Tax: $" + tax + "</p>"
+    s += "<p style='text-align: center;'> <strong> Total: $" + total.toFixed(2) + "</strong> </p>"
+
     if (delivery) {
         var new_date_obj = new Date(old_date.getTime() + 45*60000);
     } else {
@@ -21,10 +35,13 @@ function create_message(delivery, old_date) {
     }
     
     if (new_date_obj.getHours() > 12) {
-        return "your order will be delivered at " + (new_date_obj.getHours() - 12) + ":" + min_to_print + "PM"
+        s += "<p style='text-align: center;'> Your order will be delivered at: " + (new_date_obj.getHours() - 12) + ":" + min_to_print + "PM </p>"
+    } else if (new_date_obj.getHours() == 0){
+        s += "<p style='text-align: center;'> Your order will be ready at: 12" + ":" + min_to_print + "AM </p>"
     } else {
-        return "your order will be ready at " + new_date_obj.getHours() + ":" + min_to_print + "AM"
+        s += "<p style='text-align: center;'> Your order will be ready at: " + new_date_obj.getHours() + ":" + min_to_print + "AM </p>"
     }
+    return s
 }
 
 function valid(delivering, selectors) {
@@ -36,7 +53,6 @@ function valid(delivering, selectors) {
 
     // check last name
     if (delivering) {
-        console.log("delivering")
         if (!$('input[name="street"]').val() || !$('input[name="city"]').val()) {
             alert("Please fill out the address if you'd like delivery")
             return false
@@ -53,9 +69,8 @@ function valid(delivering, selectors) {
         }
     }
 
-    console.log(num_count)
     if (num_count != 7 && num_count != 10){
-        alert("Please enter a vlaid phone number")
+        alert("Please enter a valid phone number")
         return false
     }
 
@@ -68,13 +83,11 @@ function valid(delivering, selectors) {
     return false
 }
 
-function validate_and_sub(selectors) {
+function validate_and_sub(selectors, subtot, tax, total, costs_arr) {
     delivering = $('input[name="p_or_d"]:checked').val() == 'delivery'
     if (valid(delivering, selectors)) {
-        console.log(create_message(delivering, new Date))
-        window.open("file:./confirm.html", "_blank");
-        var myWindow = window.open('...')
-// myWindow.document.getElementById('foo').style.backgroundColor = 'red'
+        confirm_window = window.open("", "_blank");
+        confirm_window.document.write(create_message(delivering, new Date, selectors, subtot, tax, total, costs_arr))
     }
 }
 
@@ -83,13 +96,6 @@ $(document).ready(function() {
     selectors = []
     costs_arr = []
     cost_each_arr = [5.5, 7.25, 6.8, 9.5, 3.25]
-
-    // check for submission
-    const submit_btn = document.querySelector('input[type="button"]')
-    const user_form = document.forms['form-name']
-    $('input:button').click(function() {
-        validate_and_sub(selectors)
-    })
 
     // get selectors and inputs for cost
     for (i = 0; i < menuItems.length; i++) {
@@ -107,9 +113,9 @@ $(document).ready(function() {
         sel.change(function() {
             // update appropriate fields
             costs_arr[j].val((sel.val() * cost_each_arr[j]).toFixed(2))
-            let subtot = compute_total(costs_arr)
-            let tax = parseFloat((subtot * 0.0625).toFixed(2))
-            let total = subtot + tax
+            subtot = compute_total(costs_arr)
+            tax = parseFloat((subtot * 0.0625).toFixed(2))
+            total = subtot + tax
             $("input[name=subtotal]").val(subtot)
             $("input[name=tax]").val(tax)
             $("input[name=total]").val(total.toFixed(2))
@@ -127,4 +133,11 @@ $(document).ready(function() {
             elem.classList.toggle('hide')
         });
     });
+
+    // check for submission
+    const submit_btn = document.querySelector('input[type="button"]')
+    const user_form = document.forms['form-name']
+    $('input:button').click(function() {
+        validate_and_sub(selectors, subtot, tax, total, costs_arr)
+    })
 })

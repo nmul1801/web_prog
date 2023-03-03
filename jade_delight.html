@@ -10,7 +10,17 @@
 
 <style>
 	.hide {display: none}
-	.userInfo input {position: absolute; left: 100px;}
+	.userInfo {width: 70%;}
+	.userInfo input {float: right}
+	body {background-color: #222725; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+	form {color: #F7F7F2; margin: auto; width: 40vw; padding: 30px; border-radius: 10px; background-color: #899878}
+	h1 {color: #F7F7F2; text-align: center; font-family: 'Courier New', Courier, monospace;}
+	.totalSection {width: 70%;}
+	.totalSection input {float: right}
+	input[type="button"] {margin: 30px auto; width: 300px; height: 50px;  display: flex; justify-content: center; align-items: center; border-radius: 10px;}
+	input[type="button"]:hover {background-color: #222725; color: #F7F7F2; }
+	input[name="cost"] {width: 50px;}
+
 </style>
 
 <!-- END OF WHERE I EDITD -->
@@ -51,7 +61,7 @@ function td(content, className="")
 
 <h1>Jade Delight</h1>
 
-<!-- CHANGED THE FORM NAME (OK?) -->
+<!-- CHANGED THE FORM NAME -->
 <form name="form-name" id=#userForm onsubmit=validate_and_sub()>
 
 <p class="userInfo"><label>First Name:</label> <input type="text"  name='fname' /></p>
