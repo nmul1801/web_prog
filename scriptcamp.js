@@ -1,11 +1,5 @@
-console.log("in")
-
-const cells = Array.from(document.getElementsByTagName("td"));
+const cells = Array.from(document.querySelectorAll(".table-cell"));
 var blurbs = document.querySelectorAll(".blurb");
-
-console.log(cells.length)
-console.log(blurbs.length)
-
 
 for (let i = 0; i < cells.length; i++) {
     cells[i].onmouseover = function(){
@@ -16,5 +10,3 @@ for (let i = 0; i < cells.length; i++) {
         $("#blurb" + (i + 1)).fadeOut(400);
     };
 }
-
-
