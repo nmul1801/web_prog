@@ -6,6 +6,7 @@
     <meta http-equiv="cache-control" content="no-store,max-age=0" />
     <meta name="robots" content="noindex" />
     <title>Summer Camp</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <style>
         .pg-container {
             display: grid;
@@ -31,11 +32,26 @@
             margin: auto;
         }
         td {
-            width: 50%;
-            height: 50%;
+            width: 350px;
+            height: 350px;
+            background-image: url("./square-dummy-image.jpg");
+            position: relative;
         }
         h1 {
             text-align: center;
+        }
+        .blurb {
+            position: absolute; 
+            bottom: 0; 
+            
+            text-align: center;
+            background-color: gray;
+            display: none;
+            opacity: 80%;
+        }
+        .blurb-content {
+            color: white;
+            margin: 5px;
         }
         
         
@@ -76,16 +92,41 @@
                 <h1>Meet the crew</h1>
                 <table class="img-grid">
                     <tr>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                        <td><img src="./square-dummy-image.jpg"></td>
+                        <td>
+                            <div class="blurb" id="blurb1">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="blurb" id="blurb2">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                        <td><img src="./square-dummy-image.jpg"></td>
+                        <td>
+                            <div class="blurb" id="blurb3">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="blurb" id="blurb4">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     </table>
             </div>
             </div>
         </div>
 </body>
+<script src="./scriptcamp.js"></script>
 </html>
