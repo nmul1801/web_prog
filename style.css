@@ -5,6 +5,9 @@
 
 body {
     margin: 0;
+    background-color:burlywood;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
@@ -59,4 +62,38 @@ td {
 .about p {
     display: flex;
     width: 50%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    background-color:#3A405A;
+    padding: 20px 0;  
+}
+
+nav a{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease-in;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
 }
