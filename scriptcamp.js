@@ -1,4 +1,5 @@
 const cells = Array.from(document.querySelectorAll(".table-cell"));
+console.log(cells.length)
 var blurbs = document.querySelectorAll(".blurb");
 
 const healthy_img_paths = ["url('nick.jpg')", "url('nick.jpg')", "url('nick.jpg')", "url('nick.jpg')"]
