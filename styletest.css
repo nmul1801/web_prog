@@ -1,0 +1,12 @@
+.test-container {
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+}
+
+.test-container:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.test-container.show {
+    transform: translateX(0);
+}
