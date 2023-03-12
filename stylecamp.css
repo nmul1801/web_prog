@@ -1,0 +1,21 @@
+.pg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70vw;
+    margin: 20px auto; 
+    line-height: 1.5;
+}
+
+.list-img-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+@media screen and (max-width: 1100px) {
+    .list-img-container {
+        flex-direction: column;
+    }
+}
