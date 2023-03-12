@@ -1,0 +1,100 @@
+.imgs-container {
+    overflow: visible;
+}
+
+.pg-container {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+}
+
+li {
+    padding-left: 10px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li:before {
+    content:"🤮";
+    font-size:20px;
+    vertical-align:left;
+    margin-right: 20px;
+}
+
+.text-container {
+    line-height: 2;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 95%;
+    margin: 20px auto;
+    border-spacing: 10px;
+    overflow: visible;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    margin: 10px;
+    width: 27vw;
+    height: 27vw;
+    background-image: url("./nick.jpg");
+    background-size: 27vw;
+    position: relative;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-indent: 25px;
+}
+
+.blurb {
+    position: absolute; 
+    bottom: 0; 
+    max-height: 100%;
+    text-align: center;
+    background-color: gray;
+    display: none;
+    opacity: 80%;
+}
+
+.blurb-content {
+    color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .text-container {
+        line-height: 2;
+    }
+    .table, .table-cell {
+        display: block;
+        width: 30vw;
+        height: 30vw;
+        background-size: 30vw;
+    }
+    .table-cell, .table-row{
+        margin-top: 10px;
+    }
+
+    .text-container {
+        width: 80%;
+    }
+}
