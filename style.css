@@ -16,12 +16,15 @@ nav {
     justify-content:space-between;
     text-decoration: none;
     background-color:#3A405A;
-    padding: 30px 100px;  
+    text-align: center;
+    padding: 0px 30px;  
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+a img {
+    float: left;
+    width: 200px;
+    max-width: 100%;
+    padding-left: 0px;
 }
 
 tr {
@@ -69,13 +72,12 @@ h1 {
     color: white;
     margin: 0px;
     background-color:#3A405A;
-    padding: 20px 0;  
+    padding: 20px 0 0 0;  
 }
 
 nav a{
     font-size: 20px;
     font-weight: 100;
-    margin: 10px;
     text-decoration: none;
     position: relative;
     color: white;
