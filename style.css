@@ -92,3 +92,48 @@ nav a::after {
 nav a:hover::after {
     transform: scaleX(1);
 }
+
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .left-column,
+  .middle-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    width: 26%; 
+    margin: 0 5px;
+    padding: 30px;
+    background-color: rgb(59, 14, 14);
+    align-items: center;
+    border: white double 5px;
+    margin-bottom: 5%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .left-column,
+    .middle-column,
+    .right-column {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .product-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
