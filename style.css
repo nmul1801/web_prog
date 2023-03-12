@@ -126,7 +126,7 @@ nav a:hover::after {
     }
   }
 
-  p {
+  .plans p {
     text-align: center;
   }
 
