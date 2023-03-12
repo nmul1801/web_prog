@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style.css">
     <title>Summer Camp</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <style>
         .pg-container {
             display: grid;
@@ -26,18 +27,55 @@
             width: 100%;
             height: 100%;
         }
-        table {
+        .table {
+            display: table;
             table-layout: fixed;
             width: 90%;
-            margin: auto;
+            margin: 20px auto;
+            border-spacing: 10px;
         }
-        td {
-            width: 50%;
-            height: 50%;
+        .table-row {
+            display: table-row;
+        }
+        .table-cell {
+            display: table-cell;
+            margin: 10px;
+            width: 20vw;
+            height: 20vw;
+            background-image: url("./nick.jpg");
+            background-size: 25vw;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 40px;
         }
         h2 {
             text-align: center;
         }
+        .blurb {
+            position: absolute; 
+            bottom: 0; 
+            max-height: 100%;
+            text-align: center;
+            background-color: gray;
+            display: none;
+            opacity: 80%;
+        }
+        .blurb-content {
+            color: white;
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .table, .table-row, .table-cell {
+                display: block;
+                width: 30vw;
+                height: 30vw;
+                background-size: 30vw;
+            }
+        }
+    
         
         
     </style>
@@ -55,6 +93,7 @@
     <div class="pg-container">
         <div class="left">
             <div class="text-container">
+
                 <h2>Register for our summer course</h2>
                 <p>Passion for STEM. Unmatched expertise. Personality that brings out 
                     the absolute best in your child! We know there's no replacement
@@ -74,19 +113,45 @@
         </div>
         <div class="right">
             <div class="imgs-container">
+
                 <h2>Meet the crew</h2>
-                <table class="img-grid">
-                    <tr>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                        <td><img src="./square-dummy-image.jpg"></td>
-                    </tr>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <div class="blurb" id="blurb1">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-cell">
+                            <div class="blurb" id="blurb2">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <div class="blurb" id="blurb3">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-cell">
+                            <div class="blurb" id="blurb4">
+                                <div class="blurb-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed augue orci. Ut vel condimentum augue, pellentesque vulputate felis. Mauris at felis ipsum. Morbi et dignissim tortor. Vivamus vel euismod quam. Sed bibendum porta 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </table>
             </div>
             </div>
         </div>
 </body>
+<script src="./scriptcamp.js"></script>
 </html>
