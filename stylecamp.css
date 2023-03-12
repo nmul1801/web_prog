@@ -21,12 +21,12 @@ h2 {
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .list-img-container {
         flex-direction: column;
     }
 
-    img {
-        height: 500px;
+    #child_img {
+        height: 400px;
     }
 }

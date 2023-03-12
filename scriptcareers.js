@@ -1,9 +1,13 @@
 const cells = Array.from(document.querySelectorAll(".table-cell"));
-console.log(cells.length)
-var blurbs = document.querySelectorAll(".blurb");
-
-const prim_img_paths = ["url('./imgs/nick.jpg')", "url('./imgs/jacob_reg.jpg')", "url('./imgs/toki_reg.jpg')", "url('./imgs/Adhvith_reg.jpeg')"]
-const hover_img_paths = ["url('./imgs/nicksick.jpg')", "url('./imgs/jacob_lit.jpg')", "url('./imgs/toki_lit.jpg')", "url('./imgs/Adhvith_lit.jpeg')"]
+const blurbs = document.querySelectorAll(".blurb");
+const prim_img_paths = ["url('./imgs/nick.jpg')", 
+                        "url('./imgs/jacob_reg.jpg')", 
+                        "url('./imgs/toki_reg.jpg')", 
+                        "url('./imgs/Adhvith_reg.jpeg')"]
+const hover_img_paths = ["url('./imgs/nicksick.jpg')", 
+                        "url('./imgs/jacob_lit.jpg')", 
+                        "url('./imgs/toki_lit.jpg')", 
+                        "url('./imgs/Adhvith_lit.jpeg')"]
 
 $( document ).ready(function() {
     for (let i = 0; i < cells.length; i++) {
