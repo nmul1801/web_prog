@@ -21,21 +21,23 @@
     </header>
     
     <div class="container">
-        <form method="get" action="" name="contactForm" id="contactForm">
-            <div class="formElem"><label for="txtNameId">Name of Client:</label> <input type='text' name='txtName' id='txtNameId' placeholder="Daniel Radcliffe"></div>
-            <div class="formElem"><label for="txtEmailId">Email:</label> <input type='text' name='txtEmail' id='txtEmailId' placeholder="harry@harrypotter.uk"></div>
+        <form name="contactForm" id="contactForm">
+            <div class="formElem"><label for="txtNameId">Name of Client*:</label> <input type='text' name='txtName' id='txtNameId' placeholder="Daniel Radcliffe"></div>
+            <div class="formElem"><label for="txtEmailId">Email*:</label> <input type='text' name='txtEmail' id='txtEmailId' placeholder="harry@harrypotter.uk"></div>
+            <div class="formElem"><label for="txtEmailId">Phone Number*:</label> <input type='text' name='txtPhone' id='txtPhoneId' placeholder="(123) 456 7890"></div>
             <div class="formElem"><label for="eventDate">Meal date:</label> <input type="date" id="eventDate" name="eventDate" value="2023-07-22" required></div>
-            <div class="formElem"><p>NOTE: The <strong>tasting date</strong> must be scheduled AT LEAST 24 hours prior to the start of the meal. This ensures that Deepo's body will have enough time to react to any potential toxins.</p></div>
+            <div class="formElem"><p>NOTE: The <strong>tasting date</strong> must be scheduled AT LEAST 24 hours prior to the start of the meal. This ensures that the detector's body will have enough time to react to any potential toxins.</p></div>
             <div class="radioElem">
-                <label>Will the meal include pinapple?</label> 
+                <label>Will the meal include pineapple?</label> 
                 <input type="radio" name='pinappleRadio' value='yes'>Yes
                 <input type="radio" name='pinappleRadio' value='no' checked='1'>No
             </div>
             
             <div class="formElem"><label for="infoTxt">Additional Information:</label> <textarea name="infoTxt" rows='5' >eg. "This is a Halloween party, please wear a costume"</textarea></div>
-            <div class="formElem" id="formSubmit"><input type = 'submit' value = 'Book Deepo'></div>
+            <div class="formElem"><input id="formSubmit" type = 'button' value = 'Book DDD'></div>
+            <!-- <div class="formElem"><input id="formSubmit" type = 'submit' value = 'Book DDD'></div> -->
         </form>
     </div>
-    
+    <script src="validate_contact.js"></script>
 </body>
 </html>
