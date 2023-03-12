@@ -124,6 +124,13 @@ nav a:hover::after {
       width: 100%;
       margin: 5px 0;
    }
+   
+     .about-container, .about-head {
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+   }
+
  }
 
   .plans p {
