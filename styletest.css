@@ -5,14 +5,16 @@
 .test-container {
     width: 40vw;
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
     background-color: rgb(43, 3, 3);
     padding: 30px;
     margin: 20px auto;
     grid-auto-flow: row;
     border: double white 5px;
+    column-gap: 10px;
 }
+
 .test-header {
     display: flex;
     justify-content: space-between;
@@ -40,7 +42,7 @@ p {
     transform: translateX(0);
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .test-container {
         width: 40vw;
         display: flex;
