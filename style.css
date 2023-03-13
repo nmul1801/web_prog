@@ -180,3 +180,29 @@ nav a:hover::after {
     width: 40%;
     margin-right: 2%;
 }
+
+/* #foundersImg {
+    width: 300px;
+} */
+
+.index-container {
+    background-image: url('founders_img.jpg');
+    background-size: 100% 100%;
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-size: cover;
+			/* -webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover; */
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 10px 10px;
+    }
+}
