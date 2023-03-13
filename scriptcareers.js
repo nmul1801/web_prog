@@ -13,7 +13,6 @@ $( document ).ready(function() {
     for (let i = 0; i < cells.length; i++) {
         cells[i].style.backgroundImage =  prim_img_paths[i];
         cells[i].onmouseover = function(){
-            console.log("fading in ")
             $("#blurb" + (i + 1)).fadeIn(300);
             cells[i].style.backgroundImage = hover_img_paths[i];
         };
