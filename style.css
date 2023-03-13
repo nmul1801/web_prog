@@ -94,6 +94,28 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    background-color: rgb(59, 14, 14, .75);
+    align-items: center;
+    border: white double 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.home-content ul {
+    list-style-type: none;
+}
+.home-content li {
+    padding-bottom: 20px;
+}
+
 
 .plans {
     display: flex;
@@ -193,9 +215,9 @@ nav a:hover::after {
 
 .index-container {
     background-image: url('founders_img.jpg');
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     height: 700px;
-    width: 100%;
+    /* width: 800px; */
     margin: 0 auto;
     padding-top: 50px;
     background-size: cover;
