@@ -37,3 +37,12 @@ p {
 body {
     background-color: #E0DDCF;
 }
+
+@media screen and (max-width: 750px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin-top: 20px;
+    }
+}
