@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-store,max-age=0" />
+    <meta name="robots" content="noindex" />
+    <title>Contact Deepo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecontact.css">
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <a href="About_Us.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+</head>
+<body> 
+    <div class="container">
+        <h1>Contact Us</h1>
+        <h4>Any questions? Just fill in your details and your message. We will be quick to respond.</h4>
+        <form name="contactForm" id="contactForm">
+            <div class="formElem"><label for="txtNameId">Name:*</label><br /> <textarea type='text' rows="2" name='txtName' id='txtNameId'></textarea></div><br /><br />
+
+            <div class="formElem"><label for="txtEmailId">Email:*</label><br /> <textarea  type='text' rows="2" name='txtEmail' id='txtEmailId'></textarea></div><br /><br />
+
+            <div class="formElem"><label for="txtEmailId">Phone Number*:</label><br /> <textarea type='text' rows="2" name='txtPhone' id='txtPhoneId'></textarea></div><br /><br />
+
+            <div class="formElem"><label for="txtMessageId">Message:*</label> <br /><textarea rows="4" columns="150" name='txtMessage' id='txtMessageId'></textarea></textarea> </div><br /><br />
+
+            <div class="formElem"><input id="formSubmit" type = 'button' value = 'Submit'></div> <br />
+        </form>
+    </div>
+    <script src="validate_contact.js"></script>
+</body>
+</html>
