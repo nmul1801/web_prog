@@ -22,7 +22,7 @@ ul::before {
   content: "";
   grid-column: 1;
   grid-row: 1 / span 20;
-  background: rgb(225, 225, 225);
+  background: #e28100;
   border-radius: calc(var(--line-w) / 2);
 }
 
@@ -35,6 +35,7 @@ ul li:not(:last-child) {
 
 /* card */
 ul li {
+  --accent-color:#4A0001;
   grid-column: 2;
   --inlineP: 1.5rem;
   margin-inline: var(--inlineP);
@@ -102,13 +103,20 @@ ul li .descr {
 }
 ul li .title {
   overflow: hidden;
+  font-size: 20px;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
-  font-weight: 500;
+  font-family: cursive;
 }
 ul li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
+  line-height: 1.5;
+}
+
+li img {
+    margin: 20px;
+    max-width: 90%;
 }
 
 /* shadows */
