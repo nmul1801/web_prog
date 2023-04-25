@@ -1,0 +1,31 @@
+* {
+    text-decoration: none;
+    overflow: auto;
+ }
+
+body {
+    display: flex;
+    background-color: #F0EACA;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    background-color: #4a0001;
+    border: 5px double white;
+    text-align: center;
+    width: 50%;
+}
+
+th {
+    padding-top: 1%;
+    color: white;
+}
+
+tr {
+    color: lightgoldenrodyellow;
+}
+
+td {
+    padding: 2%;
+}
