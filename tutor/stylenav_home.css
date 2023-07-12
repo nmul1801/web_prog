@@ -1,0 +1,12 @@
+nav {
+    width: 50vw;
+    right: 25vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+a {
+    color: red;
+}

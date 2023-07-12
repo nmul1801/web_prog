@@ -1,0 +1,71 @@
+.left {
+    font-family: Courier;
+    text-align: center;
+    vertical-align: middle;
+    left: 0;
+    margin-top: 15vh;
+}
+
+h1 {
+    color: black;
+}
+
+p1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+p2 {
+    color: black;
+}
+
+.contact-form {
+    width: 90%;
+    height: 75%;
+    margin: 5% 15%;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    text-align: center;
+    float: right;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-group input, textarea {
+    font-family: Courier;
+    font-size: 15px;
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.form-group textarea {
+    border: 1px solid white;
+    height: 30%;
+}
+
+button[type="submit"] {
+    font-family: Courier;
+    background-color: white;
+    color: gray;
+    margin: 7px;
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 black;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 black;
+}

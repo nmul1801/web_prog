@@ -1,0 +1,68 @@
+h1 {
+    margin-top: 0;
+}
+
+.left {
+    margin-top: 7vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px auto;
+    background-color: darkgray;
+    color: white;
+    border-radius: 10px;
+}
+
+.exp-topic {
+    text-align: center;
+}
+
+.title {
+    margin: 20px 10px;
+    padding-left: 20px;
+}
+
+.title-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.place {
+    font-size: 1em;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.date {
+    font-size: 1em;
+    margin: 10px;
+}
+
+.body-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tag-image {
+    width: 40%;
+    height: 70%;
+    margin: 10px;
+    max-width: max-content;
+}
+
+.list-body {
+    width: 55%;
+    height: 60%;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+li {
+    margin: 12px;
+    font-size: 0.9em;
+}

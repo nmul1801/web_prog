@@ -1,0 +1,57 @@
+body {
+    background-image: linear-gradient(to bottom right, white, rgb(69, 190, 255));
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 50vw;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left {
+    animation: transitionInLeft 1.5s;
+}
+
+@keyframes transitionInLeft {
+    from {
+        transform: translateY(400%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+.right {
+    animation: transitionInRight 1.5s;
+}
+
+@keyframes transitionInRight {
+    from {
+        transform: translateY(-400%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
