@@ -44,3 +44,20 @@ a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+
+@media screen and (max-width: 1200px) {
+    .greeting {
+        margin: 50px auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        height: 35vh;
+        margin-top: 5vh;
+    }
+
+}

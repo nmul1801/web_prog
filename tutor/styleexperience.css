@@ -2,10 +2,6 @@ h1 {
     margin-top: 0;
 }
 
-.left {
-    margin-top: 7vh;
-}
-
 .item {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,9 @@
 nav {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 7vh;
 }
 
 a {

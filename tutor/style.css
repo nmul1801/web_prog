@@ -1,6 +1,16 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(to bottom right, white, rgb(69, 190, 255));
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -18,13 +28,7 @@ h2 {
 }
 
 
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 .left {
     animation: transitionInLeft 1.5s;
@@ -54,4 +58,11 @@ body {
         transform: translateY(0);
     }
 
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }

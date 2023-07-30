@@ -6,11 +6,18 @@
   <title>Nick Mulligan | Experience</title>
   <link rel='stylesheet' type='text/css' href='stylecontact.css'>
   <link rel='stylesheet' type='text/css' href='style.css'>
+  <link rel='stylesheet' type='text/css' href='stylenav.css'>
+  <link rel='stylesheet' type='text/css' href='stylecontentpg.css'>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./experience.html">Experience</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+  <div id="pg-content">
     <div class = "left container">
       <h1>Contact</h1>
       <p1>Send me an email</p1>
@@ -20,14 +27,6 @@
       <p2>nicholas.m.mulligan@gmail.com</p2>
     </div>
     <div class="right container">
-        <!--Navigation bar-->
-        <div id="nav-placeholder"></div>
-        <script>
-        $(function(){
-          $("#nav-placeholder").load("nav.html");
-        });
-        </script>
-        <!--end of Navigation bar-->
         <div class = "contact-form">
           <form action = "https://formsubmit.co/cad9f2c5809dc86b4b644db6292bce55" method="POST">
             <div class = "form-group">
@@ -49,4 +48,5 @@
           </form>
         </div>
       </div>
+  </div>
 </body>
