@@ -19,8 +19,32 @@
   </nav>
   <div id=pg-content>
     <div class="left container">
-      <h1 class="exp-topic">Child Care</h1>
-      <div class = "item box">
+      <script>
+        $(function() {  
+        // document.querySelector(".left").innerHTML += "<h1> hi </h1>"
+        s = "<h1 class='exp-topic'> Child Care </h1>"
+        fetch("childcareex.json")
+          .then(response => response.json())
+          .then(data => {
+            data.items.forEach(element => {
+              s += "<div class = 'item box'>"
+              s += "<h2>" + element.title + "</h2>"
+              s += "<div class='title-info'> <h2 class='employer'>" + element.employer
+              s += "<h2 class='date'>" + element.start + " - " + element.finish + "</h2> </div>"
+              s += "<div class='body-container'> <ul class = 'list-body'>"
+              element.list_content.forEach(bullet => {
+                s += "<li>" + bullet + "</li>"
+              })
+              s += "</ul>"
+              s += "<img class='tag-image' src=" + element.imgsrc + ">"
+              s += "</div> </div>"
+            });
+            document.querySelector(".left").innerHTML += s
+          })
+    });
+    </script>
+
+      <!-- <div class = "item box">
         <div class="title-container">
           <h2 class="title">Au Pair</h2>
           <div class="title-info">
@@ -57,7 +81,7 @@
           <img class = "tag-image">
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="right container">
       <h1 class="exp-topic">Computer Science</h1>
       <div class = "item box">

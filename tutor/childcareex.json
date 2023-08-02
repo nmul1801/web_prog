@@ -1,0 +1,17 @@
+{
+    "items": [
+        {
+            "title": "Au Pair",
+            "employer": "Bonilla-Faus Household",
+            "start": "September 2018",
+            "finish": "June 2019",
+            "list_content": [
+            "Escorted children to and from their school,and cared for them while parents were working full-time in their dental ",
+            "Provided English instruction to children who spoke two other languages (Spanish and Catalan)",
+            "Traveled with family throughout Spain",
+            "Enrolled in Spanish classes 20 hours per week at a local university"
+            ],
+            "imgsrc": "./images/lassetas.jpeg"
+        }
+    ]
+} 
